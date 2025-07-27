@@ -1,0 +1,66 @@
+body {
+    background-image: url("https://mdwestone.com/wp-content/uploads/2024/10/StandardHeader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    color: #ffff;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box {
+    width: 700px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: rows;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 10px gray;
+    backdrop-filter: blur(35px);
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 20px;
+    width: 250px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gray;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.forminput {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+#inputbox {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px white;
+    font-size: 24px;
+}
