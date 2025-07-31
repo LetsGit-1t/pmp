@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="resources/styles.css" type='text/css'>
+    <!-- <script src="resources/script.js" defer></script> -->
+</head>
+<body>
+    <header class="header">
+        <img width="315" height="59" src="https://mdwestone.com/wp-content/uploads/2024/05/logo.png" class="attachment-full size-full" alt="MD West ONE logo"/>
+        <h1>MD West ONE Messenger</h1>
+    </header>
+    <main>
+      <div id="messageContainer">
+        <section id="chat-sidebar">
+            <div class="message">Contacts</div>
+        </section>
+        <section id="chat-window">
+            <div class="message">Welcome to the MD West ONE Messenger!</div>
+            <div class="message">Feel free to type your message below.</div>
+        </section>
+        <section id="message-list">
+            <div class="message">This is where your messages will appear.</div>
+            <div class="message">You can scroll through the chat history here.</div>
+        </section>
+      </div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Type your message here..." required>
+            <button type="submit" id="send-message">Send</button>
+        </form>
+    </main>
+    
+</body>
+</html>
