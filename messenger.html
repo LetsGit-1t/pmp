@@ -8,29 +8,32 @@
     <script src="resources/script.js" defer></script>
 </head>
 <body>
+<div class='message-container'>
     <header class="header">
         <img width="315" height="59" src="https://mdwestone.com/wp-content/uploads/2024/05/logo.png" class="attachment-full size-full" alt="MD West ONE logo"/>
         <h1>MD West ONE Messenger</h1>
     </header>
     <main>
-      <div id="messageContainer">
-        <section id="chat-sidebar">
-            <div class="message">Contacts</div>
+        <section id="contactsWrapper">
+            <header class="header">
+                <h2>Contacts</h2>
+            </header>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search contacts..." required>
+                <button type="submit" id="search-button">Search</button>
+            </form>
+            <div class="contacts">Contacts listed here in scroll format</div>
         </section>
+
         <section id="chat-window">
-            <div class="message">Welcome to the MD West ONE Messenger!</div>
-            <div class="message">Feel free to type your message below.</div>
+            <div class="myMessage">Welcome to the MD West ONE Messenger!</div>
+            <div class="theirMessage">Feel free to type your message below.</div>
         </section>
-        <section id="message-list">
-            <div class="message">This is where your messages will appear.</div>
-            <div class="message">You can scroll through the chat history here.</div>
-        </section>
-      </div>
         <form id="message-form">
             <input type="text" id="message-input" placeholder="Type your message here..." required>
             <button type="submit" id="send-message">Send</button>
         </form>
     </main>
-    
+</div>
 </body>
 </html>

@@ -66,9 +66,9 @@ body {
 }
 
 /* Messaging page styling */
-#messageContainer {
+.message-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -77,14 +77,57 @@ body {
     border: 10px solid red;
 }
 
-#chat-sidebar {
-    min-height: 400px;
+#contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
     width: 100%;
     overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 2px 2px 4px gray;
 }
+
+#search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+#search-input {
+    width: 80%;
+    height: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gray;
+    font-size: 18px;
+    
+}
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    align-self: center;
+    background-color: #4e99e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    align-self: center;
+}
+#search-button:hover {
+    background-color: #34774a;
+    box-shadow: 2px 2px 4px gray;
+}
+#search-button:active {
+    background-color: #2c5f3b;
+    box-shadow: inset 2px 2px 4px gray;
+}
+
 #chat-window {
     min-height: 400px;
     width: 100%;
