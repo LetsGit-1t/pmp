@@ -164,23 +164,25 @@ body {
 }
 
 /* incoming and outgoing message bubble styling */
-.outgoing-message {
+.message.outgoing {
     background-color: #4e99e5;
     color: white;
-    padding: 10px;
+    padding: 10px 14px;
     border-radius: 10px;
     margin: 10px;
     align-self: flex-end;
     max-width: 70%;
+    word-wrap: break-word;
 }
-.incoming-message {
+.message.incoming {
     background-color: #e5e5e5;
     color: black;
-    padding: 10px;
+    padding: 10px 14px ;
     border-radius: 10px;
     margin: 10px;
     align-self: flex-start;
     max-width: 70%;
+    word-wrap: break-word;
 }
 
 /* message input styling */
