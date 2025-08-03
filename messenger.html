@@ -12,8 +12,14 @@
     <!-- sidebar -->
     <aside class="message-list">
       <header>
-        <h1>MD West ONE Messenger</h1>
+        <img src="https://mdwestone.com/wp-content/uploads/2024/05/logo.png" alt="MD West ONE Logo" class="logo">
       </header>
+      <section id="contactsWrapper">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search ...">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </section>
       <div class="conversations">
         <div class="conversation">Conversation 1</div>
         <div class="conversation">Conversation 2</div>
@@ -21,16 +27,6 @@
     </aside>
     <!-- main chat area -->
       <div class="chat-container">
-        <section id="contactsWrapper">
-            <header class="header">
-                <h2>Contacts</h2>
-            </header>
-            <form id="search-form">
-                <input type="text" id="search-input" placeholder="Search contacts..." required>
-                <button type="submit" id="search-button">Search</button>
-            </form>
-            <div class="contacts">Contacts listed here in scroll format</div>
-        </section>
 
         <section id="chat-window">
             <div class="message outgoing">Welcome to the MD West ONE Messenger!</div>
