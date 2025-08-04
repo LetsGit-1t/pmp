@@ -56,6 +56,16 @@ document.querySelector('.conversations').addEventListener('click', e => {
   }
 });
 
+// Update chat title based on selected conversation
+const chatTitle = document.getElementById('chat-title');
+document.querySelector('.conversations').addEventListener('click', e => {
+  const card = e.target.closest('.conversation-card');
+  if (card) {
+    const contactName = card.querySelector('.conversation-details .name').textContent;
+    chatTitle.textContent = contactName || 'MD West ONE Messenger';
+  }
+});
+
 // Handle new message button click
 document.getElementById('new-message-button').addEventListener('click', e => {
   // create a new coversation card
@@ -70,6 +80,8 @@ document.getElementById('new-message-button').addEventListener('click', e => {
     </section>
   `;
   document.querySelector('.conversations').appendChild(newCard);
+  // Optionally, you can also update the chat title
+  chatTitle.textContent = 'New Message';
   // Optionally, you can also load this new conversation into the chat window
   windowEl.innerHTML = ''; // clear current messages
   const placeholderMessage = document.createElement('p');
